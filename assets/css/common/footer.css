@@ -1,0 +1,65 @@
+.footer {
+    width: 100%;
+    height: 187px;
+    display: flex;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+
+
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img-cwi-direitos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-crescer{
+    width: 82px;
+    height: 33.18px;
+    
+}
+
+.logo-footer {
+    width: 90px;
+    height: 34px;
+}
+
+.logo-direitos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .logo-crescer {
+        display: none;
+
+    }
+
+    .logo-menu {
+        display: none;
+    }
+
+    .img-cwi-direitos {
+        display: none;
+    }
+
+   
+}
+
+@media (min-width: 1000px){
+    .logo-direitos {
+        display: none;
+    }
+}

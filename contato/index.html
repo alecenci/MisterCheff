@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/common/style.css">
+    <link rel="stylesheet" href="../assets/css/common/header.css">
+    <link rel="stylesheet" href="../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body> 
+    <div class="container">
+        <header class="header">
+            <div class="container-centralizador header-container">
+            <img src="../assets/img/LOGO.svg" class="logo" alt="logo">
+
+            <input type="checkbox" id="menu-control" class="menu-control">
+            <ul class="menu">
+                <li class="menu-item"> <a href="../index.html" class="menu-item-link">Home</a></li>
+                <li class="menu-item"> <a href="../sobre/index.html" class="menu-item-link">Sobre nós</a></li>
+                <li class="menu-item"> <a href="#" class="menu-item-link">Serviços</a></li>
+                <li class="menu-item"> <a href="../contato/index.html" class="menu-item-link">Contato</a></li>
+            </ul>
+
+            <label for="menu-control" class="hamburguer-icon">
+                <img src="../assets/img/Hamburguer-icon.png"  alt="abrir">
+            </label>
+
+            <div class="logo-sem-escrita">
+                <img src="../assets/img/logo-sem-escrita.png" alt="logo">
+            </div>
+        </div>
+    </header>
+
+    <div class="banner-container-contato">
+        <img src="../assets/img/contato banner.png" class="img-banner-contato">
+        <div class="contato-content">
+            <div class="container-centralizador">
+                <h1 class="title title-branco">Contato</h1>
+                <div class="texto-contato">
+                    <span class="texto-open-sans-18 texto-cor1">Olá somos a Cenci S.A nosso trabalho é 
+                    aumentar seus resultados conectando você ao seu cliente!</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="formulario">
+        <div class="container-centralizador">
+            <div class="formulario-informacoes-contato">
+                <div class="titulo-formulario">
+                    <div class="titulo-envelope-icon">
+                        <h1 class="texto-mont-20 texto-cor3">Envie-nos uma mensagem</h1>
+                        <div class="envelope-icon">
+                            <img src="../assets/img/ENVELOP.png">
+                        </div>
+                    </div>
+
+                    <form action="../processadados" method="post">
+                        <div class="par-de-dados">
+                            <div class="bloco-item-formulario">
+                                <label class="texto-mont-14 texto-cor4 margin-botton"for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required class="texto-open-sans-14 texto-cor6" placeholder="Ex: João Silva">
+                            </div>
+
+                            <div class="bloco-item-formulario">
+                                    <label class="texto-mont-14 texto-cor4 margin-botton"for="email">Email</label>
+                                    <input type="email" id="email" name="email" required class="texto-open-sans-14 texto-cor6" placeholder="Ex: seuemail@email.com" >
+                            </div>
+
+                        </div>
+
+                        <div class="par-de-dados">
+                            <div class="bloco-item-formulario">
+                                <label class="texto-mont-14 texto-cor4 margin-botton"for="ramo">Ramo que atua</label>
+                                <select id="ramo" name="ramo" required>
+                                    <option value="" selected disabled >Selecione...</option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="saude">Saúde</option>
+                                    <option value="educacao">Educação</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="bloco-item-formulario">
+                                    <label class="texto-mont-14 texto-cor4 margin-botton"for="assunto">Assunto</label>
+                                    <div class="radio">
+                                    <label class="texto-open-sans-14 texto-cor6 margin-right" for="investimento"><input type="radio" id="investimento" name="assunto" value="investimento"> Investimento</label>
+                                    <label class="texto-open-sans-14 texto-cor6" for="contratacao"><input type="radio" id="contratacao" name="assunto" value="Contratação"> Contratação</label>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bloco-textarea">
+                            <label class="texto-mont-14 texto-cor4 margin-botton" for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="texto-open-sans-14 texto-cor6" 
+                            placeholder="Digite sua mensagem aqui..." ></textarea>
+                        </div>
+
+                        <div class="par-de-dados">
+                            <div class="bloco-politica-button">
+                                <input type="checkbox" id="aceito" name="politicas" value="aceito">
+                                <label for="aceito" class="texto-open-sans-14 texto-cor6"> Li e concordo com a 
+                                    <a href="#" class="link-politica">polítca de privacidade</a> </label>
+                            </div>
+                            <div class="bloco-politica-button">
+                            <input type="submit" value="Enviar        >" class="botao-formulario">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                    <div class="informacoes-contato">
+                        <div class="titulo-envelope-icon">
+                        <h1 class="texto-mont-20 texto-cor1">Informações de contato</h1>
+                        </div>
+                        <div class="bloco-todas-informacoes">
+                        <div class="bloco-informacao">
+                            <div class="localizacao-icon">
+                                <img src="../assets/img/localizacao-icon.png" alt="localizacao">
+                            </div>
+                            <div class="informacao-content">
+                                <span class="texto-open-sans-14 texto-cor1">Av. Nações Unidas, 2502 - Centro, Novo Hamburgo 
+                                CEP: 93330-000 </span>
+                            </div>
+                        </div>
+
+                        <div class="bloco-informacao">
+                            <div class="telefone-icon">
+                                <img src="../assets/img/telefone-icon.png" alt="telfone">
+                            </div>
+                            <div class="informacao-content">
+                                <span class="texto-open-sans-14 texto-cor1">51 3004 - 4002 </span>
+                            </div>
+                        </div>
+
+                        <div class="bloco-informacao">
+                            <div class="mensagem-icon">
+                                <img src="../assets/img/mensagem-icon.png" alt="mensagem">
+                            </div>
+                            <div class="informacao-content">
+                                <span class="texto-open-sans-14 texto-cor1">contato@cenciS.A.com.br </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-centralizador footer-container">
+            <div class="logo-menu">
+            <img src="../assets/img/LOGO.svg" class="logo-footer" alt="logo">
+            <img src="../assets/img/CRESCER LOGO.svg" class="logo-crescer" alt="CWI crescer">
+            
+            </div>
+
+            <div class="img-cwi-direitos">
+                <ul class="menu">
+                    <li class="menu-item menu-item-link1"> <a href="../Home/index.html" class="menu-item-link">Home</a></li>
+                    <li class="menu-item"> <a href="../sobre/index.html" class="menu-item-link">Sobre nós</a></li>
+                    <li class="menu-item"> <a href="#" class="menu-item-link">Serviços</a></li>
+                    <li class="menu-item"> <a href="../contato/index.html" class="menu-item-link">Contato</a></li>
+                </ul>
+                
+                <span class="texto-open-sans-14 texto-cor4">Copyright ©. Todos os direitos reservados a Cenci S.A</span>
+            </div>
+
+            <div class="logo-direitos">
+                <img src="../assets/img/LOGO.svg" class="logo-footer" alt="logo">
+                <span class="texto-open-sans-10 texto-cor4">Copyright ©. Todos os direitos reservados</span>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    
+</body>
+</html>
