@@ -1,0 +1,206 @@
+.banner-container-sobre{
+    width: 100%;
+    height: 456px;
+    position: relative;
+}
+
+.sobre-nos-content {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.texto-sobre-nos {
+    width: 424px;
+    height: 50px;
+}
+
+.nosso-time-container {
+    width: 100%;
+    height: 490px;
+    display: flex;
+    align-items: center;
+}
+
+.nosso-time-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.foto-funcionario {
+    width: 257px;
+    height: 257px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-funcionario img{
+    width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 80, 112, 0.5);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: opacity 0.5s ease;
+  }
+
+  .overlay h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;  
+    margin-bottom: 5px;
+  }
+
+  .overlay p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  .foto-funcionario:hover .overlay {
+    opacity: 1;
+  }
+
+  .foto-funcionario:hover img {
+    transform: scale(1.1);
+  }
+
+  .text {
+    text-align: left;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    
+  }
+
+.nosso-time-fotos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.title-nosso-time{
+    margin-bottom: 5px;
+}
+
+.missao {
+    width: 100%;
+    height: 425px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+}
+
+.missao-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.missao-icon {
+    width: 63px;
+    height: 59px;
+}
+
+.valores-visao-icon {
+    width: 55px;
+    height: 63px;
+}
+
+.icone-titulo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+}
+
+.icone-conteudo{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.bloco-missao{
+    width: 336px;
+
+}
+
+.title-missao {
+    margin: 0 10px;
+}
+
+@media (max-width: 1000px){
+    .banner-container-sobre {
+        height: 456px;
+    }
+
+    .texto-sobre-nos{
+        width: 319px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .nosso-time-container {
+        height: 1590px;
+       
+    }
+
+    .nosso-time-fotos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-funcionario {
+        margin-top: 20px;
+        width: 334px;
+        height: 334px;
+    }
+
+    .nosso-time-content{
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .missao-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .missao {
+        height: 600px;
+        
+        justify-content: space-between;
+    }
+
+    .bloco-missao {
+        margin-top: 30px;
+    }
+}
